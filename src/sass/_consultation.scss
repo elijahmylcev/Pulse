@@ -1,0 +1,28 @@
+.consultation {
+    // width: 1920px;
+    min-height: 680px;
+    background: url(../img/bg2.jpg) center (center/cover) no-repeat;
+    padding: 100px 0 92px 0;
+
+    &_title {
+        font-size: 36px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    };
+
+    &_request {
+        display: block;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: 80px;
+    };
+
+    &_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+};
