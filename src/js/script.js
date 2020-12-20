@@ -23,14 +23,6 @@ $(document).ready(function(){
       });
 
 
-/*     $('.catalog-item').each(function(i) {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-            $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-            $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-        })
-    }); */
-
     function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {
@@ -45,13 +37,6 @@ $(document).ready(function(){
     toggleSlide('.catalog-item__back');
 });
     
-/* $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-      items: 1
-  });
-}); */
-
-
 //modal
 
     $('[data-modal=consultation]').on('click', function() {
@@ -67,4 +52,35 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                  required: true,
+                  email: true
+                }},
+            messages: {
+                    name: {
+                        required: "Пожалуйста, введите свое имя",
+                        minlength: jQuery.validator.format("Введите {0} символа!")
+                      },
+                    phone: "Пожалуйста, введите свой номер телефона",
+                    email: {
+                      required: "Пожалуйста, введите свою почту",
+                      email: "Ваш почтовый адрес должен быть в формате name@domain.com"
+                    }
+                  }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
     
