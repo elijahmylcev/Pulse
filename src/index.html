@@ -5,14 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pulse</title>
-<!--   <link rel="stylesheet" href="css/bootstrap-reboot.min.css" /> -->
 <link rel="stylesheet" href="css/slick.css" />
-<!--  <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+<link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <header class="header">
         <a href="#" class="header_logo">
@@ -72,7 +71,7 @@
             полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
         </div>
         <div class="advantages__item">
-          <img src="icons/icon_heart.png" alt="">
+          <img src="icons/icon_heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
           <div class="advantages__subtitle">Делимся опытом</div>
           <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью
             и были в радость Вам и Вашим близким!</div>
@@ -94,7 +93,7 @@
         и мы перезвоним вам в течении 10 минут</div>
           <form id="consultation-form" class="feed-form" action="#">
             <input name="name" required type="text" placeholder="Ваше имя">
-            <input name="phone" required type="number" placeholder="Ваш телефон">
+            <input name="phone" required placeholder="Ваш телефон">
             <input name="email" required type="email" placeholder="Ваш E-mail">
 
             <!-- <input type="submit" value="заказать КОНСУЛЬТАЦИЮ"> -->
@@ -102,16 +101,6 @@
           </form>
     </div>
   </section>
-
-<!--   <section class="carousel">
-    <div class="container">
-      <div class="owl-carousel">
-        <div><img src="img/slide/slide_1.jpg" alt="#"> </div>
-        <div><img src="img/slide/slide_2.jpg" alt="#"></div>
-        <div><img src="img/slide/slide_3.png" alt="#"></div>
-      </div>
-    </div>
-  </section>  -->
 
    <section class="carousel">
     <div class="container">
@@ -370,7 +359,7 @@
     <div class="container">
     <h2 class="title">отзывы клиентов</h2>
     <div class="rewiews-wrapper">
-    <div class="reviews-user">
+    <div class="reviews-user fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
       <div class="reviews-user__photo">
         <img src="img/user-photo/user_photo_1.png" alt="user-photo">
       </div>
@@ -391,8 +380,8 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
-    <div class="reviews-user">
+    <div class="line fadeInUp wow"></div>
+    <div class="reviews-user fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
       <div class="reviews-user__photo">
         <img src="img/user-photo/user_photo_2.png" alt="user-photo">
       </div>
@@ -411,8 +400,8 @@
         </div>
       </div>
     </div>
-    <div class="line"></div>
-    <div class="reviews-user">
+    <div class="line fadeInUp wow"></div>
+    <div class="reviews-user fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
       <div class="reviews-user__photo">
         <img src="img/user-photo/user_photo_3.png" alt="user-photo">
       </div>
@@ -459,10 +448,9 @@
       <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed-form feed-form_mt25" action="#">
         <input name="name" type="text" placeholder="Ваше имя">
-        <input name="phone" type="number" placeholder="Ваш телефон">
+        <input name="phone" placeholder="Ваш телефон">
         <input name="email" type="email" placeholder="Ваш E-mail">
 
-        <!-- <input type="submit" value="заказать КОНСУЛЬТАЦИЮ"> -->
         <button class="button button_submit">заказать КОНСУЛЬТАЦИЮ</button>
       </form>
 
@@ -474,7 +462,7 @@
       <div class="modal__descr">Пульсометр Polar FT1</div>
       <form class="feed-form feed-form_mt25" action="#">
         <input name="name" required type="text" placeholder="Ваше имя">
-        <input name="phone" required type="number" placeholder="Ваш телефон">
+        <input name="phone" required placeholder="Ваш телефон">
         <input name="email" required type="email" placeholder="Ваш E-mail">
 
         <!-- <input type="submit" value="заказать КОНСУЛЬТАЦИЮ"> -->
@@ -493,10 +481,15 @@
 
   </div>
 
+  <a href="#up" class="pageup">
+    <img src="icons/up.svg" alt="up">
+  </a>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <Script src="js/jquery.validate.min.js"></Script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
