@@ -27,7 +27,8 @@
     "node-sass": "^4.14.0"
   },
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "gulp-htmlmin": "^5.0.1"
   },
   "description": ""
 }
