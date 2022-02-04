@@ -32,13 +32,12 @@
     color: #0d0d0d;
     margin-top: 26px;
   }
-  &__icon{ 
+  &__icon {
     &_animated {
       animation-name: heartbeat;
       animation-duration: 1.5s;
       animation-timing-function: ease;
       animation-iteration-count: infinite;
-
     }
   }
 }
