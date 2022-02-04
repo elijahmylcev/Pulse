@@ -77,3 +77,31 @@
     }
   }
 }
+
+@media (max-width: 321px) {
+  .header {
+    &_logo {
+      width: 120px;
+    }
+    &__phone {
+      font-size: 12px;
+    }
+    &_contacts {
+      & > button {
+        width: 120px;
+        font-size: 10px;
+      }
+    }
+  }
+  .promo {
+    &__wrapper {
+      margin-top: 45px;
+    }
+    &__header {
+      font-size: 22px;
+    }
+    &__subheader {
+      font-size: 12px;
+    }
+  }
+}
