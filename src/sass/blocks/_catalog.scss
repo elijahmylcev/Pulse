@@ -10,11 +10,13 @@
     padding-left: 0;
   }
   &__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 50px;
     border: 2px solid #d0d0d0;
     font-size: 18px;
-    line-height: 48px;
     text-transform: uppercase;
     color: #6b6b6b;
     text-align: center;
