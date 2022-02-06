@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .reviews {
+    &-wrapper {
+      padding: 40px 0;
+      & > .line {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+    &-user {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &__text {
+        margin-left: 0;
+      }
+      &__name {
+        text-align: center;
+      }
+      &__status {
+        text-align: center;
+      }
+    }
+    & > .container > h2 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .reviews {
+    &-user {
+      &__photo > img {
+        width: 120px;
+      }
+      &__name {
+        font-size: 16px;
+      }
+      &__status {
+        margin-top: 0px;
+        font-size: 12px;
+      }
+      &__reviews {
+        margin-top: 12px;
+        font-size: 12px;
+      }
+    }
+    & > .container > h2 {
+      font-size: 22px;
+    }
+  }
+}
