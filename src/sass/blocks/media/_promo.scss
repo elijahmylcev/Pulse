@@ -95,6 +95,11 @@
     }
   }
   .promo {
+    button.button_main {
+      font-size: 12px;
+      width: 190px;
+      height: 33px;
+    }
     &__wrapper {
       margin-top: 45px;
     }
